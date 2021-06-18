@@ -12,3 +12,10 @@ console.log(productsFilter)
 const productsMap = products.map(product=>product.price)
 console.log('Prices: ', productsMap);
 products.map(product=>console.log(`El ${product.name} cuesta $ ${product.price}.`))
+
+//Desestructurando un array
+const returnArr = () =>{
+    return ['ABC',123]
+}
+const [Letras,Numeros] = returnArr()
+console.log(`Las Letras: ${Letras} y los numeros ${Numeros}.`)
